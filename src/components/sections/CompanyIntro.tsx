@@ -1,5 +1,6 @@
 import { CheckCircle } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import companyImg from "../../assets/images/cleanroom-workers.jpg";
 import { companyIntro } from "../../data/content";
 import { SectionHeader } from "../ui/SectionHeader";
 import { ScrollReveal } from "../ui/ScrollReveal";
@@ -22,7 +23,7 @@ export function CompanyIntro() {
             <div className="relative overflow-hidden rounded-2xl">
               <motion.img
                 style={{ scale: imgScale }}
-                src="/pics/cleanroom-workers.jpg"
+                src={companyImg}
                 alt="Clean room facility"
                 loading="lazy"
                 className="h-80 w-full object-cover lg:h-[420px]"

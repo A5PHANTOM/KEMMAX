@@ -1,3 +1,12 @@
+import heroBg from "../assets/images/cleanroom-workers.jpg";
+import serviceFactory from "../assets/images/factory-worker-glass.jpg";
+import serviceScientist from "../assets/images/scientist-machine.jpg";
+import serviceLab from "../assets/images/lab-workers.jpg";
+import serviceChip from "../assets/images/futuristic-chip.jpg";
+import industryCar from "../assets/images/car-assembly.jpg";
+import industryHealthcare from "../assets/images/healthcare-ai.jpg";
+import industryMedical from "../assets/images/medical-ppe-lab.jpg";
+
 export const company = {
   name: "KEMMAX",
   legalName: "Clean Room Projects (OPC) Pvt Ltd",
@@ -33,8 +42,7 @@ export const hero = {
     { value: "100+", label: "Projects Delivered" },
     { value: "24/7", label: "Technical Support" },
   ],
-  backgroundImage:
-    "/pics/cleanroom-workers.jpg",
+  backgroundImage: heroBg,
 };
 
 export const services = [
@@ -43,8 +51,7 @@ export const services = [
     subtitle: "Concept to Blueprint",
     description:
       "Comprehensive clean room layout design aligned with ISO and GMP standards for optimal workflow and contamination control.",
-    image:
-      "/pics/factory-worker-glass.jpg",
+    image: serviceFactory,
     path: "/about",
   },
   {
@@ -52,8 +59,7 @@ export const services = [
     subtitle: "Precision Systems",
     description:
       "Advanced HVAC, filtration, and pressure cascade engineering for pharmaceutical, semiconductor, and healthcare facilities.",
-    image:
-      "/pics/scientist-machine.jpg",
+    image: serviceScientist,
     path: "/about",
   },
   {
@@ -61,8 +67,7 @@ export const services = [
     subtitle: "Validation Ready",
     description:
       "Full IQ/OQ/PQ commissioning and performance qualification to ensure your clean room meets regulatory requirements.",
-    image:
-      "/pics/lab-workers.jpg",
+    image: serviceLab,
     path: "/about",
   },
   {
@@ -70,8 +75,7 @@ export const services = [
     subtitle: "Climate Control",
     description:
       "Specialized air handling systems with HEPA filtration, temperature control, and humidity management for critical environments.",
-    image:
-      "/pics/futuristic-chip.jpg",
+    image: serviceChip,
     path: "/products",
   },
 ];
@@ -94,40 +98,35 @@ export const industries = [
     description:
       "GMP-compliant clean rooms for drug manufacturing, sterile processing, and quality control laboratories.",
     icon: "pill",
-    image:
-      "/pics/cleanroom-workers.jpg",
+    image: heroBg,
   },
   {
     name: "Semiconductor",
     description:
       "Ultra-clean environments with precise particle control for wafer fabrication and microelectronics assembly.",
     icon: "cpu",
-    image:
-      "/pics/futuristic-chip.jpg",
+    image: serviceChip,
   },
   {
     name: "Automotive",
     description:
       "Controlled environments for precision component manufacturing, painting booths, and quality inspection areas.",
     icon: "car",
-    image:
-      "/pics/car-assembly.jpg",
+    image: industryCar,
   },
   {
     name: "Healthcare",
     description:
       "Sterile processing areas, isolation rooms, and specialized medical device manufacturing facilities.",
     icon: "heart-pulse",
-    image:
-      "/pics/healthcare-ai.jpg",
+    image: industryHealthcare,
   },
   {
     name: "Operation Theatre",
     description:
       "Hospital-grade OT suites with laminar airflow, HEPA filtration, and infection control systems.",
     icon: "stethoscope",
-    image:
-      "/pics/medical-ppe-lab.jpg",
+    image: industryMedical,
   },
 ];
 
@@ -264,8 +263,7 @@ export const cta = {
   message:
     "Contact KEMMAX today for a free consultation and quote. Our team is ready to engineer the right controlled environment for your facility.",
   button: "Contact Us",
-  image:
-    "/pics/factory-worker-glass.jpg",
+  image: serviceFactory,
 };
 
 export const about = {
