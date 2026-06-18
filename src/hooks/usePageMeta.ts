@@ -8,7 +8,7 @@ export interface PageMeta {
 
 export function usePageMeta(meta: PageMeta) {
   useEffect(() => {
-    const suffix = "KEMMAX | Clean Room Engineering";
+    const suffix = "KEMMAX | Cleanroom Solutions";
     const title = meta.title.includes("KEMMAX") ? meta.title : `${meta.title} | ${suffix}`;
     document.title = title;
 

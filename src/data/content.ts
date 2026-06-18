@@ -6,6 +6,19 @@ import serviceChip from "../assets/images/futuristic-chip.jpg";
 import industryCar from "../assets/images/car-assembly.jpg";
 import industryHealthcare from "../assets/images/healthcare-ai.jpg";
 import industryMedical from "../assets/images/medical-ppe-lab.jpg";
+import prodAHU from "../assets/images/air-handling-unit-user.png";
+import prodAirShower from "../assets/images/air-shower.png";
+import prodModularPanels from "../assets/images/modular-panels-new.png";
+import prodDehumidifier from "../assets/images/dehumidifier.png";
+import prodDuctingPiping from "../assets/images/ducting-piping.png";
+import prodDoor from "../assets/images/cleanroom-door.png";
+import prodPiping from "../assets/images/piping-insulation.png";
+import prodCeiling from "../assets/images/walkable-ceiling.png";
+import prodRAR from "../assets/images/return-air-riser.png";
+import prodFullGlass from "../assets/images/full-glass-panel.png";
+import prodPreformed from "../assets/images/preformed-panels.png";
+import prodFireRated from "../assets/images/fire-rated-panels.png";
+import prodFlooring from "../assets/images/epoxy-flooring.png";
 
 export const company = {
   name: "KEMMAX",
@@ -19,8 +32,8 @@ export const company = {
   whatsapp: "https://wa.me/919042676645",
   mapEmbed:
     "https://maps.google.com/maps?q=Plot+No.16+Kuppusamy+Nagar+Thirumazhisai+Poonamalle+Chennai&output=embed",
-  yearEstablished: "2010",
-  yearsExperience: "15+",
+  yearEstablished: "2021",
+  yearsExperience: "5+",
   projectsCompleted: "100+",
   industriesServed: "5+",
 };
@@ -33,7 +46,7 @@ export const navLinks = [
 ];
 
 export const hero = {
-  headline: "Your Vision. Our Clean Room Engineering.",
+  headline: "Your Vision. Our Cleanroom Solutions.",
   subheadline:
     "KEMMAX delivers end-to-end cleanroom solutions for industries where precision and purity are non-negotiable. From design and supply to installation and validation, we engineer controlled environments built to international standards.",
   cta: "Get Started",
@@ -83,7 +96,7 @@ export const services = [
 export const companyIntro = {
   title: "Engineering Clean. Building Trust.",
   description:
-    "KEMMAX is a specialist cleanroom solutions company dedicated to delivering controlled environments that meet the highest standards of cleanliness, safety, and regulatory compliance. We work with clients across India to design, supply, install, and validate cleanrooms tailored to their exact operational and compliance requirements.",
+    "KEMMAX is a specialist cleanroom solutions company dedicated to delivering controlled environments that meet the highest standards of cleanliness, safety, and regulatory compliance. We work with clients across India and abroad to design, supply, install, and validate cleanrooms tailored to their exact operational and compliance requirements.",
   highlights: [
     `${company.yearsExperience} years of industry experience`,
     "Turnkey clean room solutions — design, supply, install & validate",
@@ -119,14 +132,14 @@ export const industries = [
     description:
       "Sterile processing areas, isolation rooms, and specialized medical device manufacturing facilities.",
     icon: "heart-pulse",
-    image: industryHealthcare,
+    image: industryMedical,
   },
   {
     name: "Operation Theatre",
     description:
       "Hospital-grade OT suites with laminar airflow, HEPA filtration, and infection control systems.",
     icon: "stethoscope",
-    image: industryMedical,
+    image: industryHealthcare,
   },
 ];
 
@@ -135,77 +148,125 @@ export const featuredProducts = [
     id: "modular-panels",
     name: "Modular Clean Room Panels",
     description:
-      "Prefabricated sandwich panels with seamless joints, antimicrobial coatings, and integrated cable management for rapid deployment.",
+      "Prefabricated sandwich panels with seamless joints, antimicrobial coatings, and integrated cable management. Material options include SS, PPGI, PCGI, HPL, and PVC. Core insulations available: PUF, PIR, and Rockwool. Available in 50, 80, and 100 mm thicknesses in progressive or non-progressive installation models.",
     category: "Panels",
-    image:
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd87a?w=600&q=80",
-  },
-  {
-    id: "hepa-filtration",
-    name: "HEPA Filtration Systems",
-    description:
-      "High-efficiency particulate air filtration units achieving 99.97% efficiency at 0.3 microns for critical clean room zones.",
-    category: "Filtration",
-    image:
-      "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&q=80",
+    image: prodModularPanels,
   },
   {
     id: "ahu-systems",
-    name: "HVAC Air Handling Units",
+    name: "Air Handling Units (AHU)",
     description:
-      "Custom-engineered AHU systems with precise temperature, humidity, and pressure control for validated environments.",
+      "Custom-engineered double-skinned Air Handling Units with integrated cooling, heating, and multistage filtration (EU3 to HEPA) to maintain strict cleanroom parameters.",
     category: "HVAC",
-    image:
-      "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80",
+    image: prodAHU,
+  },
+  {
+    id: "air-showers",
+    name: "Air Showers & Entry Chambers",
+    description:
+      "Premium stainless steel cleanroom air showers equipped with high-velocity air nozzles (20-25 m/s) and HEPA filters to decontaminate personnel prior to entry.",
+    category: "Accessories",
+    image: prodAirShower,
   },
 ];
 
 export const allProducts = [
   ...featuredProducts,
   {
-    id: "clean-room-doors",
-    name: "Clean Room Doors",
+    id: "dehumidification-systems",
+    name: "Industrial Dehumidifiers & Ambiators",
     description:
-      "Hermetically sealed doors with interlocking systems, vision panels, and automatic sliding mechanisms for contamination control.",
-    category: "Doors",
-    image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80",
+      "Advanced desiccant and refrigeration-based dehumidifiers integrated with adiabatic cooling (ambiator) systems for high-precision humidity control.",
+    category: "HVAC",
+    image: prodDehumidifier,
   },
   {
-    id: "pass-box",
-    name: "Pass Box Systems",
+    id: "ventilation-heat-recovery",
+    name: "Ventilation & Heat Recovery Units",
     description:
-      "Static and dynamic pass boxes with UV sterilization and interlock systems for safe material transfer between zones.",
+      "Energy-efficient fresh air ventilation systems equipped with heat recovery wheels or plate heat exchangers to optimize thermal load management.",
+    category: "HVAC",
+    image: serviceScientist,
+  },
+  {
+    id: "vrv-condensing-units",
+    name: "VRVs & Condensing Units",
+    description:
+      "High-efficiency Variable Refrigerant Volume (VRV) systems and robust outdoor condensing units tailored for heavy-duty cleanroom HVAC demands.",
+    category: "HVAC",
+    image: serviceChip,
+  },
+  {
+    id: "ducting-insulation",
+    name: "Cleanroom Ducting Works",
+    description:
+      "Pre-fabricated rectangular and spiral GI / pre-insulated ducting works, meticulously sealed and leak-tested to ensure contamination-free air supply.",
+    category: "HVAC",
+    image: prodDuctingPiping,
+  },
+  {
+    id: "piping-utility-insulation",
+    name: "Piping & Utility Insulation",
+    description:
+      "High-grade chilled water, hot water, and utility piping networks insulated with nitrile rubber or glasswool for optimal thermal efficiency.",
     category: "Accessories",
-    image:
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=80",
+    image: prodPiping,
   },
   {
-    id: "monitoring-system",
-    name: "Environmental Monitoring",
+    id: "clean-room-doors",
+    name: "Doors and View Panels",
     description:
-      "Real-time particle counters, differential pressure monitors, and temperature/humidity logging for continuous compliance.",
-    category: "Monitoring",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
+      "Hermetically sealed cleanroom doors and flush-mounted double glazed view panels with interlocking mechanisms, dropdown seals, and fire-resistant cores.",
+    category: "Doors",
+    image: prodDoor,
   },
   {
-    id: "validation-services",
-    name: "Validation Services",
+    id: "full-glass-panels",
+    name: "Full Glass Panels & Partitions",
     description:
-      "Complete IQ/OQ/PQ documentation, airflow visualization, and recovery testing per ISO 14644 and EU GMP guidelines.",
-    category: "Validation",
-    image:
-      "https://images.unsplash.com/photo-1532187863486-abf9db0281ae?w=600&q=80",
+      "Aesthetic, frameless, and flush-mounted full glass panel partitions for maximum visibility and architectural brilliance in modern sterile facilities.",
+    category: "Panels",
+    image: prodFullGlass,
   },
   {
-    id: "laminar-flow",
-    name: "Laminar Flow Units",
+    id: "fire-rated-panels",
+    name: "Fire Rated Panels",
     description:
-      "Vertical and horizontal laminar airflow hoods for sterile work zones with integrated HEPA filtration and lighting.",
-    category: "Filtration",
-    image:
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80",
+      "Tested and certified modular fire-rated cleanroom wall and ceiling panels (up to 2 hours rating) with Rockwool cores to ensure maximum safety.",
+    category: "Panels",
+    image: prodFireRated,
+  },
+  {
+    id: "preformed-panels",
+    name: "Pre-formed Panels",
+    description:
+      "Specialized pre-formed modular cleanroom wall, ceiling, and corner panels designed with integrated radius covings to eliminate sharp 90-degree angles.",
+    category: "Panels",
+    image: prodPreformed,
+  },
+  {
+    id: "walkable-ceiling-systems",
+    name: "Walkable & Non-Walkable Ceilings",
+    description:
+      "Heavy-duty walkable ceiling panel grids designed to support maintenance loads, and cost-effective non-walkable ceilings for lighter installations.",
+    category: "Panels",
+    image: prodCeiling,
+  },
+  {
+    id: "return-air-risers",
+    name: "Inbuilt & Exposed Return Air Risers (RAR)",
+    description:
+      "Flush inbuilt or surface-mounted Return Air Risers (RAR) designed for optimal air recycling and laminar flow maintenance inside cleanrooms.",
+    category: "Panels",
+    image: prodRAR,
+  },
+  {
+    id: "cleanroom-flooring",
+    name: "Cleanroom Flooring Systems",
+    description:
+      "Self-leveling epoxy and polyurethane (PU) flooring systems, creating a seamless, chemical-resistant, and electrostatic discharge (ESD) safe surface.",
+    category: "Panels",
+    image: prodFlooring,
   },
 ];
 
@@ -268,9 +329,9 @@ export const cta = {
 
 export const about = {
   overview: [
-    "KEMMAX is a specialist cleanroom solutions company dedicated to delivering controlled environments that meet the highest standards of cleanliness, safety, and regulatory compliance. We work with clients across India to design, supply, install, and validate cleanrooms tailored to their exact operational and compliance requirements.",
-    "We provide a comprehensive range of cleanroom products and turnkey project services — from modular cleanroom systems and HVAC solutions to validation support and compliance documentation. Whether you're building a new facility or upgrading an existing one, KEMMAX handles every stage of the process.",
-    "With deep expertise across pharmaceutical, semiconductor, healthcare, and industrial sectors, KEMMAX is your trusted partner for compliant, high-performance cleanroom environments. Our commitment to quality, innovation, and customer satisfaction has made us a preferred partner for organizations that cannot compromise on environmental control.",
+    "KEMMAX is a specialist cleanroom solutions company dedicated to delivering controlled environments that meet the highest standards of cleanliness, safety, and regulatory compliance. We work with clients across India and abroad to design, supply, install, and validate cleanrooms tailored to their exact operational and compliance requirements.",
+    "We provide a comprehensive range of cleanroom products and turnkey project services — from modular cleanroom systems, molecular clean rooms, HVAC solutions, and operation theatres to validation support and compliance documentation. Whether you're building a new facility or upgrading an existing one, KEMMAX handles every stage of the process.",
+    "With deep expertise across pharmaceutical, semiconductor, healthcare, automobiles, food processing units, and industrial sectors, KEMMAX is your trusted partner for compliant, high-performance cleanroom environments. Our commitment to quality, innovation, and customer satisfaction has made us a preferred partner for organizations that cannot compromise on environmental control.",
   ],
   vision:
     "To be the most trusted cleanroom solutions provider in India — recognised for our engineering precision, quality standards, and commitment to every client we serve.",

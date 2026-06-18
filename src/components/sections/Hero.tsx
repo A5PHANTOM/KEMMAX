@@ -21,22 +21,12 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-navy/90 via-navy/80 to-navy/95" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(0,168,158,0.15),transparent_60%)]" />
 
-      <motion.div style={{ y: contentY }} className="relative z-10 mx-auto max-w-7xl px-4 py-24 text-center md:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-        >
-          <span className="mb-6 inline-block rounded-full border border-teal/30 bg-teal/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-teal-light">
-            Clean Room Engineering
-          </span>
-        </motion.div>
-
+      <motion.div style={{ y: contentY }} className="relative z-10 mx-auto max-w-7xl px-4 pt-32 pb-48 text-center md:px-8 md:pt-40 md:pb-52">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.35 }}
-          className="font-display text-4xl font-bold leading-tight tracking-tight text-white md:text-6xl lg:text-7xl"
+          className="font-display text-3xl font-bold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl"
         >
           {hero.headline.split(". ").map((part, i) => (
             <span key={part} className={i === 1 ? "text-gradient-teal" : ""}>

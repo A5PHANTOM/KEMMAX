@@ -36,7 +36,7 @@ const containerVariants: Variants = {
 
 export function ServiceCards() {
   return (
-    <section className="relative z-20 -mt-20 pb-12 md:-mt-28">
+    <section className="relative z-20 -mt-16 pb-12 md:-mt-24">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <motion.div
           variants={containerVariants}
