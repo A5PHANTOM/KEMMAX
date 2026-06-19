@@ -20,6 +20,7 @@ import prodPreformed from "../assets/images/preformed-panels.png";
 import prodFireRated from "../assets/images/fire-rated-panels.png";
 import prodFlooring from "../assets/images/epoxy-flooring.png";
 import cleanroomCorridor from "../assets/images/cleanroom-corridor.png";
+import prodVRV from "../assets/images/vrv-condensing-unit.png";
 
 
 export const company = {
@@ -150,7 +151,7 @@ export const featuredProducts = [
     id: "modular-panels",
     name: "Modular Clean Room Panels",
     description:
-      "Prefabricated sandwich panels with seamless joints, antimicrobial coatings, and integrated cable management. Material options include SS, PPGI, PCGI, HPL, and PVC. Core insulations available: PUF, PIR, and Rockwool. Available in 50, 80, and 100 mm thicknesses in progressive or non-progressive installation models.",
+      "Prefabricated modular sandwich panels with seamless joints, antimicrobial coatings, and integrated utilities. Available in PUF, PIR, or Rockwool insulation options.",
     category: "Panels",
     image: prodModularPanels,
   },
@@ -196,7 +197,7 @@ export const allProducts = [
     description:
       "High-efficiency Variable Refrigerant Volume (VRV) systems and robust outdoor condensing units tailored for heavy-duty cleanroom HVAC demands.",
     category: "HVAC",
-    image: serviceChip,
+    image: prodVRV,
   },
   {
     id: "ducting-insulation",

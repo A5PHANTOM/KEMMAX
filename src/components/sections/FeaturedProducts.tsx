@@ -39,8 +39,8 @@ export function FeaturedProducts() {
           className="grid grid-cols-1 gap-8 md:grid-cols-3"
         >
           {featuredProducts.map((product) => (
-            <motion.div key={product.id} variants={staggerItem}>
-              <div className="group overflow-hidden rounded-2xl bg-white shadow-lg shadow-navy/5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-teal/10">
+            <motion.div key={product.id} variants={staggerItem} className="h-full">
+              <div className="group flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-lg shadow-navy/5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-teal/10">
                 <div className="relative h-56 overflow-hidden">
                   <img
                     src={product.image}
@@ -52,11 +52,11 @@ export function FeaturedProducts() {
                     {product.category}
                   </span>
                 </div>
-                <div className="p-6">
+                <div className="flex flex-1 flex-col p-6">
                   <h3 className="font-display text-lg font-bold text-navy">
                     {product.name}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-navy/60">
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-navy/60">
                     {product.description}
                   </p>
                   <Link

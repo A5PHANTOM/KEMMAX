@@ -35,18 +35,18 @@ export function ContactPreview() {
               href: "/contact",
             },
           ].map((item, i) => (
-            <ScrollReveal key={item.label} delay={i * 0.1}>
+            <ScrollReveal key={item.label} delay={i * 0.1} className="h-full">
               <a
                 href={item.href}
-                className="group block rounded-2xl glass-light p-8 transition-all duration-300 hover:scale-[1.02] hover:glow-teal"
+                className="group flex h-full flex-col rounded-2xl glass-light p-8 transition-all duration-300 hover:scale-[1.02] hover:glow-teal"
               >
-                <div className="mb-4 inline-flex rounded-xl bg-teal/10 p-3">
+                <div className="mb-4 inline-flex self-start rounded-xl bg-teal/10 p-3">
                   <item.icon className="h-6 w-6 text-teal" />
                 </div>
                 <h3 className="font-display text-sm font-semibold uppercase tracking-widest text-navy/40">
                   {item.label}
                 </h3>
-                <p className="mt-2 text-navy/80">{item.value}</p>
+                <p className="mt-2 flex-grow text-navy/80">{item.value}</p>
               </a>
             </ScrollReveal>
           ))}
