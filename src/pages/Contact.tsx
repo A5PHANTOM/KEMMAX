@@ -8,7 +8,7 @@ import {
   Send,
   CheckCircle,
 } from "lucide-react";
-import { company, contactForm, socialLinks } from "../data/content";
+import { company, contactForm } from "../data/content";
 import { usePageMeta } from "../hooks/usePageMeta";
 import { SectionHeader } from "../components/ui/SectionHeader";
 import { Button } from "../components/ui/Button";
@@ -287,22 +287,6 @@ export function Contact() {
                   </div>
                 </a>
 
-                <div className="rounded-2xl glass-light p-6">
-                  <h3 className="mb-3 text-sm font-semibold uppercase tracking-widest text-navy/40">
-                    Follow Us
-                  </h3>
-                  <div className="flex gap-3">
-                    {socialLinks.map((social) => (
-                      <a
-                        key={social.platform}
-                        href={social.url}
-                        className="rounded-full bg-teal/10 px-4 py-2 text-xs font-semibold text-teal transition-colors hover:bg-teal hover:text-white"
-                      >
-                        {social.platform}
-                      </a>
-                    ))}
-                  </div>
-                </div>
               </div>
             </ScrollReveal>
           </div>

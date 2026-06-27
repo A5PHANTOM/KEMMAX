@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { company, navLinks, socialLinks } from "../../data/content";
+import { company, navLinks } from "../../data/content";
 
 export function Footer() {
   return (
@@ -67,23 +67,6 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
-            <h3 className="mb-4 font-display text-sm font-semibold uppercase tracking-widest text-teal">
-              Follow Us
-            </h3>
-            <div className="flex gap-4">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.platform}
-                  href={social.url}
-                  className="rounded-full bg-white/10 px-4 py-2 text-xs font-medium text-white/70 transition-colors hover:bg-teal hover:text-white"
-                  aria-label={social.platform}
-                >
-                  {social.platform}
-                </a>
-              ))}
-            </div>
-          </div>
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 md:flex-row">

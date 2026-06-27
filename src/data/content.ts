@@ -378,12 +378,6 @@ export const about = {
   ],
 };
 
-export const socialLinks = [
-  { platform: "LinkedIn", url: "#", icon: "linkedin" },
-  { platform: "Facebook", url: "#", icon: "facebook" },
-  { platform: "Instagram", url: "#", icon: "instagram" },
-];
-
 export const contactForm = {
   title: "Send Us a Message",
   subtitle:
