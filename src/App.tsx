@@ -14,7 +14,6 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: company.name,
-  legalName: company.legalName,
   description:
     "KEMMAX delivers end-to-end cleanroom solutions for industries where precision and purity are non-negotiable.",
   url: "https://kemmaxcpl.com",

@@ -90,7 +90,7 @@ export function About() {
             transition={{ type: "spring", stiffness: 100, damping: 16, delay: 0.2 }}
             className="mx-auto mt-4 max-w-2xl text-lg text-white/70"
           >
-            {company.legalName} — Engineering controlled environments since{" "}
+            Engineering controlled environments since{" "}
             {company.yearEstablished}.
           </motion.p>
         </div>

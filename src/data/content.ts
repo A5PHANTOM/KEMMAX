@@ -25,7 +25,6 @@ import prodVRV from "../assets/images/vrv-condensing-unit.png";
 
 export const company = {
   name: "KEMMAX",
-  legalName: "Clean Room Projects (OPC) Pvt Ltd",
   tagline: "Engineering Clean. Building Trust.",
   phone: "+91 9042676645",
   phoneRaw: "919042676645",

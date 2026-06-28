@@ -13,9 +13,6 @@ export function Footer() {
               alt={`${company.name} logo`}
               className="mb-4 h-12 w-auto brightness-0 invert"
             />
-            <p className="text-sm font-semibold text-teal-light">
-              {company.legalName}
-            </p>
             <p className="mt-2 text-sm text-white/60">{company.tagline}</p>
           </div>
 
@@ -71,7 +68,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 md:flex-row">
           <p className="text-xs text-white/40">
-            &copy; {new Date().getFullYear()} {company.name} {company.legalName}. All rights
+            &copy; {new Date().getFullYear()} {company.name}. All rights
             reserved.
           </p>
           <p className="text-xs text-white/40">
